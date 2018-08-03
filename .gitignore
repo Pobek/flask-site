@@ -1,6 +1,6 @@
 #visual studio shit
-.vscode/
+/.vscode/
 
 # pycache shit
-__pycache__/
-app/__pycache__/
+/__pycache__/
+/app/__pycache__/
