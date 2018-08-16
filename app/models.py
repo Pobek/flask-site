@@ -2,7 +2,7 @@ from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin
 from hashlib import md5
-from app import db, login
+from app import *
 
 followers = db.Table('followers',
     db.Column('follower_id', db.Integer, db.ForeignKey('user.id')),
@@ -52,6 +52,8 @@ class User(UserMixin, db.Model):
             followers, (followers.c.followed_id == Post.user_id)).filter(
                 followers.c.follower_id == self.id)
         own = Post.query.filter_by(user_id = self.id)
+        app.logger.debug("followed results: {}".format(followed))
+        app.logger.debug("own results: {}".format(own))
         return followed.union(own).order_by(Post.timestamp.desc())
 
     def __repr__(self):
@@ -62,6 +64,7 @@ class Post(db.Model):
     body = db.Column(db.String(140))
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    author = db.Column(db.String(50), index=True)
 
     def __repr__(self):
         return '<Post {}>'.format(self.body)

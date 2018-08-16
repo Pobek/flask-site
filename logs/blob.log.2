@@ -1,0 +1,101 @@
+2018-08-03 12:53:46,745 INFO: Blob startup [in E:\Code\Python\flask-site\app\__init__.py:27]
+2018-08-03 19:41:38,716 INFO: Blob startup [in /home/evya/Documents/workspace/python-workspace/flask-site/app/__init__.py:27]
+2018-08-03 19:42:22,169 INFO: Blob startup [in /home/evya/Documents/workspace/python-workspace/flask-site/app/__init__.py:27]
+2018-08-03 19:43:31,397 INFO: Blob startup [in /home/evya/Documents/workspace/python-workspace/flask-site/app/__init__.py:27]
+2018-08-03 22:49:01,803 INFO: Blob startup [in /home/evya/Documents/workspace/python-workspace/flask-site/app/__init__.py:27]
+2018-08-03 22:49:10,954 INFO: Blob startup [in /home/evya/Documents/workspace/python-workspace/flask-site/app/__init__.py:27]
+2018-08-04 11:27:56,497 INFO: Blob startup [in /home/evya/Documents/workspace/python-workspace/flask-site/app/__init__.py:27]
+2018-08-04 17:45:05,388 INFO: Blob startup [in /home/evya/Documents/workspace/python-workspace/flask-site/app/__init__.py:27]
+2018-08-04 18:01:25,999 INFO: Blob startup [in /home/evya/Documents/workspace/python-workspace/flask-site/app/__init__.py:27]
+2018-08-04 19:50:46,584 INFO: Blob startup [in /home/evya/Documents/workspace/python-workspace/flask-site/app/__init__.py:27]
+2018-08-10 17:32:18,512 INFO: Blob startup [in /home/evya/Documents/workspace/python/flask-site/app/__init__.py:27]
+2018-08-10 17:36:12,123 INFO: Blob startup [in /home/evya/Documents/workspace/python/flask-site/app/__init__.py:27]
+2018-08-10 17:36:12,454 INFO: Blob startup [in /home/evya/Documents/workspace/python/flask-site/app/__init__.py:27]
+2018-08-10 17:37:22,470 INFO: Blob startup [in /home/evya/Documents/workspace/python/flask-site/app/__init__.py:27]
+2018-08-10 17:37:22,796 INFO: Blob startup [in /home/evya/Documents/workspace/python/flask-site/app/__init__.py:27]
+2018-08-10 17:37:46,489 INFO: Blob startup [in /home/evya/Documents/workspace/python/flask-site/app/__init__.py:28]
+2018-08-10 17:37:49,629 INFO: Blob startup [in /home/evya/Documents/workspace/python/flask-site/app/__init__.py:28]
+2018-08-10 17:37:49,953 INFO: Blob startup [in /home/evya/Documents/workspace/python/flask-site/app/__init__.py:28]
+2018-08-10 17:38:17,854 INFO: Blob startup [in /home/evya/Documents/workspace/python/flask-site/app/__init__.py:27]
+2018-08-10 17:38:24,428 INFO: Blob startup [in /home/evya/Documents/workspace/python/flask-site/app/__init__.py:27]
+2018-08-10 17:38:48,109 DEBUG: Blob startup in DEBUG [in /home/evya/Documents/workspace/python/flask-site/app/__init__.py:32]
+2018-08-10 17:38:48,532 DEBUG: Blob startup in DEBUG [in /home/evya/Documents/workspace/python/flask-site/app/__init__.py:32]
+2018-08-11 02:16:36,159 INFO: Blob startup [in /home/evya/Documents/workspace/python/flask-site/app/__init__.py:27]
+2018-08-11 02:17:04,076 ERROR: Exception on / [GET] [in /home/evya/.local/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/evya/.local/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/evya/Documents/workspace/python/flask-site/app/routes.py", line 27, in index
+    return render_template('index.html', title='Home', posts=posts)
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/home/evya/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/evya/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/evya/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/evya/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/evya/Documents/workspace/python/flask-site/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/evya/Documents/workspace/python/flask-site/app/templates/base.html", line 33, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/evya/Documents/workspace/python/flask-site/app/templates/index.html", line 6, in block "content"
+    {{ form.hidden_tag() }}
+  File "/home/evya/.local/lib/python3.6/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2018-08-11 02:17:08,344 ERROR: Exception on /index [GET] [in /home/evya/.local/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/evya/.local/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/evya/Documents/workspace/python/flask-site/app/routes.py", line 27, in index
+    return render_template('index.html', title='Home', posts=posts)
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/home/evya/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/evya/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/evya/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/evya/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/evya/Documents/workspace/python/flask-site/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/evya/Documents/workspace/python/flask-site/app/templates/base.html", line 33, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/evya/Documents/workspace/python/flask-site/app/templates/index.html", line 6, in block "content"
+    {{ form.hidden_tag() }}
+  File "/home/evya/.local/lib/python3.6/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined

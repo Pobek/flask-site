@@ -16,12 +16,17 @@ login.login_view = 'login'
 
 from app import routes, models, errors
 
+if not os.path.exists('logs'):
+    os.mkdir('logs')
+file_handler = RotatingFileHandler('logs/blob.log', maxBytes=10240, backupCount=10)
+file_handler.setFormatter(logging.Formatter('%(asctime)s %(levelname)s: %(message)s [in %(pathname)s:%(lineno)d]'))
 if not app.debug:
-    if not os.path.exists('logs'):
-        os.mkdir('logs')
-    file_handler = RotatingFileHandler('logs/blob.log', maxBytes=10240, backupCount=10)
-    file_handler.setFormatter(logging.Formatter('%(asctime)s %(levelname)s: %(message)s [in %(pathname)s:%(lineno)d]'))
     file_handler.setLevel(logging.INFO)
     app.logger.addHandler(file_handler)
     app.logger.setLevel(logging.INFO)
     app.logger.info('Blob startup')
+elif app.debug:
+    file_handler.setLevel(logging.DEBUG)
+    app.logger.addHandler(file_handler)
+    app.logger.setLevel(logging.DEBUG)
+    app.logger.debug('Blob startup in DEBUG')
