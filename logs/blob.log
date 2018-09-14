@@ -1,1 +1,138 @@
-2018-08-03 12:53:46,745 INFO: Blob startup [in E:\Code\Python\flask-site\app\__init__.py:27]
+2018-08-11 02:21:13,494 ERROR: Exception on /index [POST] [in /home/evya/.local/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/evya/.local/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/evya/Documents/workspace/python/flask-site/app/routes.py", line 21, in index
+    post = Post(body=form.post.data, author=current_user)
+  File "<string>", line 4, in __init__
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/orm/state.py", line 417, in _initialize_instance
+    manager.dispatch.init_failure(self, args, kwargs)
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 249, in reraise
+    raise value
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/orm/state.py", line 414, in _initialize_instance
+    return manager.original_init(*mixed[1:], **kwargs)
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/ext/declarative/base.py", line 699, in _declarative_constructor
+    (k, cls_.__name__))
+TypeError: 'author' is an invalid keyword argument for Post
+2018-08-11 17:37:29,511 INFO: Blob startup [in /home/evya/Documents/workspace/python/flask-site/app/__init__.py:27]
+2018-08-11 17:37:52,113 ERROR: Exception on /index [POST] [in /home/evya/.local/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/evya/.local/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/evya/Documents/workspace/python/flask-site/app/routes.py", line 21, in index
+    post = Post(body=form.post.data, author=current_user)
+  File "<string>", line 4, in __init__
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/orm/state.py", line 417, in _initialize_instance
+    manager.dispatch.init_failure(self, args, kwargs)
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 249, in reraise
+    raise value
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/orm/state.py", line 414, in _initialize_instance
+    return manager.original_init(*mixed[1:], **kwargs)
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/ext/declarative/base.py", line 699, in _declarative_constructor
+    (k, cls_.__name__))
+TypeError: 'author' is an invalid keyword argument for Post
+2018-08-11 17:39:42,267 INFO: Blob startup [in /home/evya/Documents/workspace/python/flask-site/app/__init__.py:27]
+2018-08-11 17:39:50,518 INFO: Blob startup [in /home/evya/Documents/workspace/python/flask-site/app/__init__.py:27]
+2018-08-11 17:42:55,563 INFO: Blob startup [in /home/evya/Documents/workspace/python/flask-site/app/__init__.py:27]
+2018-08-11 17:42:58,606 INFO: Blob startup [in /home/evya/Documents/workspace/python/flask-site/app/__init__.py:27]
+2018-08-11 17:43:18,180 INFO: Blob startup [in /home/evya/Documents/workspace/python/flask-site/app/__init__.py:27]
+2018-08-11 17:43:25,392 ERROR: Exception on /index [POST] [in /home/evya/.local/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+    context)
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 509, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.InterfaceError: Error binding parameter 3 - probably unsupported type.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/evya/.local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/evya/.local/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/evya/Documents/workspace/python/flask-site/app/routes.py", line 23, in index
+    db.session.commit()
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/orm/scoping.py", line 153, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 943, in commit
+    self.transaction.commit()
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 467, in commit
+    self._prepare_impl()
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 447, in _prepare_impl
+    self.session.flush()
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2254, in flush
+    self._flush(objects)
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2380, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 249, in reraise
+    raise value
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2344, in _flush
+    flush_context.execute()
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 391, in execute
+    rec.execute(self)
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 556, in execute
+    uow
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 181, in save_obj
+    mapper, table, insert)
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 866, in _emit_insert_statements
+    execute(statement, params)
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 948, in execute
+    return meth(self, multiparams, params)
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 269, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1060, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1200, in _execute_context
+    context)
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1413, in _handle_dbapi_exception
+    exc_info
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 265, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 248, in reraise
+    raise value.with_traceback(tb)
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+    context)
+  File "/home/evya/.local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 509, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.InterfaceError: <unprintable InterfaceError object>
