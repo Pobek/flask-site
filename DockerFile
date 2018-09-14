@@ -1,0 +1,20 @@
+# Use pytho image
+FROM python:3.7.0-stretch
+
+# Set working directory
+WORKDIR /workdir
+
+# Copy current content to workdir
+ADD . /workdir
+
+# Install required packages
+RUN pip3 install --trusted-host pypi.python.org -r requirements.txt
+
+# Make port 80 available
+EXPOSE 80
+
+# Change the env name
+ENV NAME flasky
+
+# Run main python
+CMD ["python","blob.py"]
