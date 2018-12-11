@@ -2,5 +2,8 @@
 __pycache__/
 *.pyc
 
-#visual studio shit
+# Visual studio shit
 .vscode/
+
+# App files
+logs/
